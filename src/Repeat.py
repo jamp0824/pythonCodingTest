@@ -26,7 +26,11 @@ print(result)
 
 score = [90,100,40,77,80]
 ban = {1,4}
+for i in score:
+    print('i = ',i)
+
 for i in range(5):
     if i+1 in ban:
         continue
     if score[i] >60 : print(i+1,'번째 학생은 합격입니다')
+

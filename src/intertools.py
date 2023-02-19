@@ -30,6 +30,7 @@ print('combinations',result)  #[('A', 'B'), ('A', 'C'), ('B', 'C')]
 from itertools import product
 
 result = list(product(data, repeat = 2)) # 2개를 뽑는 모든 순열 구하기 (중복허용)
+#product [('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'B'), ('B', 'C'), ('C', 'A'), ('C', 'B'), ('C', 'C')]
 print('product',result)
 
 #combinations_with_replacement 는 combinations와 같은 리스트와 같은 iterable 객체에서 r개의 데이터를 뽑아 순서를 고려하지 않고
@@ -40,5 +41,6 @@ print('product',result)
 from itertools import combinations_with_replacement
 
 result = list(combinations_with_replacement(data,2))
+#combinations_with_replacement [('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'B'), ('B', 'C'), ('C', 'C')]
 print('combinations_with_replacement',result)
 
